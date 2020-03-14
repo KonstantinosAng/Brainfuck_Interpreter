@@ -1,31 +1,9 @@
 #!/usr/bin/python
 """
-SIMPLE BRAINF*CK INTERPRETER AS CLASS
-
-Usage:
-
-    Windows:
-
-        - For Testing Hello_World:
-                python brainfuck.py --m=test
-
-        - For passing a file:
-                python brainfuck.py filename
-
-        filename must always be *.bf
-
-    Linux:
-        Execute Command:
-                chmod +x brainfuck.py
-
-        - For Testing Hello_World:
-                ./brainfuck.py --m=test
-
-        - For passing a file:
-                ./brainfuck.py filename
-
-        filename must always be *.bf
-
+Author: Konstantinos Angelopoulos
+Date: 04/02/2020
+All rights reserved.
+Feel free to use and modify and if you like it give it a star.
 """
 
 

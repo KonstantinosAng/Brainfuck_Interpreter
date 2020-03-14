@@ -14,21 +14,39 @@ Usage:
     **Windows**:
 
         - For Testing Hello_World:
-                python brainfuck.py --m=test
+        
+	        python brainfuck.py --m=test
 
         - For passing a file:
-                python brainfuck.py filename
+           
+	     python brainfuck.py filename
 
-        filename must always be *.bf
+	- Importing the class:
+
+		from brainfuck import Brainfuck
+		interpreter = Brainfuck(code='+[-[<<[+[--->]-[<<<]]]>>>-]>-.---.>..>.<<<<-.<+.>>>>>.>.<<.<-.')
+		interpreter.evaluate()
+
+        ! Filename must always be *.bf
 
     **Linux**:
+
         Execute Command:
-                chmod +x brainfuck.py
+                
+		chmod +x brainfuck.py
 
         - For Testing Hello_World:
-                ./brainfuck.py --m=test
+                
+		./brainfuck.py --m=test
 
         - For passing a file:
-                ./brainfuck.py filename
+                
+		./brainfuck.py filename
 
-        filename must always be *.bf
+	- Importing the class:
+		
+		from brainfuck import Brainfuck
+		interpreter = Brainfuck(code='+[-[<<[+[--->]-[<<<]]]>>>-]>-.---.>..>.<<<<-.<+.>>>>>.>.<<.<-.')
+		interpreter.evaluate()
+	
+	! Filename must always be *.bf

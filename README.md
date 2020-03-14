@@ -10,7 +10,7 @@ Download and Install [Python](https://www.python.org).
 
 Usage:
 
-    *Windows*:
+    **Windows**:
 
         - For Testing Hello_World:
                 python brainfuck.py --m=test
@@ -20,7 +20,7 @@ Usage:
 
         filename must always be *.bf
 
-    *Linux*:
+    **Linux**:
         Execute Command:
                 chmod +x brainfuck.py
 

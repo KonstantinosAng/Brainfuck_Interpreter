@@ -5,6 +5,7 @@ A simple Python Interpreter for the Esoteric Language [Brainfuck](https://en.wik
 ## Requirements
 
 Download and Install [Python](https://www.python.org).
+Tested for Python 2.7.X and Python 3.8.0
 
 ## Instructions
 

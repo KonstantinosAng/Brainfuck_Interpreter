@@ -20,12 +20,12 @@ class Brainfuck:
                 else:
                     raise Exception('[ARGUMENT ERROR] Not a brainf*ck file. File must end with .bf')
             else:
-                raise Exception(f"Usage: python {sys.argv[0]} filename")
+                raise Exception("Usage: python {} filename".format(sys.argv[0]))
         else:
             if isinstance(code, str):
                 self._code = code
             else:
-                raise Exception(f'[ARGUMENT ERROR] Code is not type string: {code}')
+                raise Exception('[ARGUMENT ERROR] Code is not type string: {}'.format(code))
         self._buffer = [0]
         self._pointer = 0
         self._loop_map = []
@@ -36,7 +36,7 @@ class Brainfuck:
             if c == '[' or c == ']':
                 brackets += 1
             if c not in ['+', '-', '<', '>', '.', ',', '[', ']']:
-                raise Exception(f'[Syntax Error] Unexpected character: {c}')
+                raise Exception('[Syntax Error] Unexpected character: {}'.format(c))
         if brackets % 2 != 0:
             raise Exception("[Syntax Error] Loop Brackets miss match!")
 
@@ -96,7 +96,7 @@ class Brainfuck:
                 if len(user_input) == 1:
                     self._buffer[self._pointer] = ord(user_input)
                 else:
-                    raise Exception(f"[INPUT ERROR] Only one byte is allowed: {user_input}")
+                    raise Exception("[INPUT ERROR] Only one byte is allowed: {}".format(user_input))
             i += 1
 
 

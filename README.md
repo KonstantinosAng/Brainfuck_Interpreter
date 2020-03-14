@@ -1,6 +1,6 @@
 # Brainfuck_Interpreter
 
-A simple Python Interpreter for the Esoteric Language [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck)
+A simple Python Interpreter for the [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) Esoteric Language.
 
 ## Requirements
 

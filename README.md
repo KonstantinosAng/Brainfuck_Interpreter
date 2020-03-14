@@ -26,6 +26,15 @@ Usage:
 		from brainfuck import Brainfuck
 		interpreter = Brainfuck(code='+[-[<<[+[--->]-[<<<]]]>>>-]>-.---.>..>.<<<<-.<+.>>>>>.>.<<.<-.')
 		interpreter.evaluate()
+		
+		or 
+		
+		from brainfuck import Brainfuck
+		interpreter = Brainfuck(code='')
+		with open(filename, 'r') as f:
+			code = f.read()
+		interpreter._code = code
+		interpreter.evaluate()
 
         ! Filename must always be *.bf
 
@@ -47,6 +56,15 @@ Usage:
 		
 		from brainfuck import Brainfuck
 		interpreter = Brainfuck(code='+[-[<<[+[--->]-[<<<]]]>>>-]>-.---.>..>.<<<<-.<+.>>>>>.>.<<.<-.')
+		interpreter.evaluate()
+		
+		or
+		
+		from brainfuck import Brainfuck
+		interpreter = Brainfuck(code='')
+		with open(filename, 'r') as f:
+			code = f.read()
+		interpreter._code = code
 		interpreter.evaluate()
 	
 	! Filename must always be *.bf
